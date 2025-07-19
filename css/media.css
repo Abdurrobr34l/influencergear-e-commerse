@@ -7,23 +7,57 @@
 
 /* *TABLET */
 @media (min-width: 576px) and (max-width: 1023.98px) {
-  /* body {
-    background-color: violet;
-  } */
+  /* *HERO START */
+  .hero-container {
+    gap: 40px;
+  }
+  /* *HERO END */
 }
 
 /* *LAPTOP */
 @media (min-width: 1024px) and (max-width: 1279.98px) {
-  /* body {
-    background-color: coral;
-  } */
+  /* *HERO START */
+  .hero {
+    padding: 40px 0 50px;
+  }
+  .hero-container {
+    flex-direction: row;
+    gap: 100px;
+  }
+  .hero-contents {
+    width: 60%;
+    text-align: left;
+  }
+  .hero-contents h1 {
+    line-height: 50px;
+  }
+  .hero-contents .btn {
+    margin: 0;
+  }
+  /* *HERO END */
 }
 
 /* *DESKTOP */
 @media (min-width: 1280px) {
-  /* body {
-    background-color: yellow;
-  } */
+  /* *HERO START */
+  .hero {
+    padding: 50px 0 70px;
+  }
+  .hero-container {
+    flex-direction: row;
+    gap: 150px;
+  }
+  .hero-contents {
+    width: 60%;
+    text-align: left;
+  }
+  .hero-contents h1 {
+    line-height: 50px;
+  }
+  .hero-contents .btn {
+    margin: 0;
+  }
+  /* *HERO END */
 }
 
 /* *EXTRA-LARGE DESKTOP */

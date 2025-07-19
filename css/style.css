@@ -13,6 +13,7 @@
   --text-clr: #787885;
   --accent-clr: #e02c6d;
 
+  --bg-clr: #0a0826;
   --white-clr: #ffffff;
   --black-clr: rgba(0, 0, 0, 0.87);
 
@@ -96,6 +97,10 @@ video {
   flex-direction: column;
 }
 
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -124,6 +129,10 @@ video {
   border-radius: 0 !important;
 }
 
+.display-none {
+  display: none;
+}
+
 /* *COMMON STYLE CSS START */
 h1,
 h2 {
@@ -142,7 +151,7 @@ h1 {
   font-size: clamp(1.75rem, 1.3214rem + 2.1429vw, 3.25rem);
 }
 h2 {
-  font-size: clamp(1rem, 0.7857rem + 1.0714vw, 1.75rem);
+  font-size: clamp(1.5rem, 1.25rem + 1.25vw, 2.375rem);
 }
 h3 {
   font-size: 1.75rem;
@@ -158,8 +167,13 @@ p {
 
 /* *BLOCK'S CSS START */
 .btn {
-  padding: 10px 24px;
-    font-family: var(--font-poppins);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 0 24px;
+  height: 44px;
+  font-family: var(--font-poppins);
   font-size: 0.8rem;
   font-weight: 700;
   background-color: var(--accent-clr);
@@ -168,6 +182,73 @@ p {
   transition: background-color 0.33s ease-in-out;
 }
 .btn:hover {
-  background-color: var(--heading-title-clr);
+  background-color: var(--bg-clr);
 }
 /* *BLOCK'S CSS END */
+
+/* *HERO START */
+.hero {
+  padding: 22px 0 55px;
+}
+.hero-container {
+  gap: 15px;
+  flex: 1;
+}
+.hero-contents {
+  width: 100%;
+  max-width: 580px;
+}
+.hero-contents h1 {
+  line-height: 35px;
+}
+.hero-contents p {
+  margin: 15px 0;
+}
+.hero-contents .btn {
+  width: 170px;
+}
+.hero-image {
+  background: url(../images/banner/circle-bg.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* *HERO END */
+
+/* *FOOTER START */
+footer {
+  padding: 50px 0;
+  background-color: var(--bg-clr);
+}
+.footer-contents h2,
+.footer-contents p {
+  color: var(--white-clr);
+}
+.footer-contents h2 {
+  font-size: 1.5rem;
+}
+footer .footer-contents p:nth-child(3) {
+  margin: 5px 0 10px;
+}
+.footer-social-icons ul {
+  gap: 7px;
+}
+.footer-social-icons a {
+  padding: 12px;
+  background-color: #22213c;
+  border-radius: 50%;
+  transition: background-color 0.33s ease-in-out, outline 0.43s ease-in-out;
+}
+.footer-social-icons a:hover {
+  background-color: transparent;
+  outline: 1px solid var(--accent-clr);
+}
+.footer-social-icons i {
+  font-size: clamp(1.25rem, 1.1071rem + 0.7143vw, 1.75rem);
+  color: var(--white-clr);
+  transition: color 0.33s ease-in-out;
+}
+.footer-social-icons i:hover {
+  color: var(--accent-clr);
+}
+/* *FOOTER END */

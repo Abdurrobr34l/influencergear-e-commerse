@@ -13,11 +13,24 @@
 <body>
 
   <!-- *HEADER START -->
-  <header>
+  <header class="display-none">
+    <div class="header-toggler"><i class="fa-solid fa-bars fa-lg"></i></div>
     <div class="logo">
       <a href="index.html">Influencer Gear</a>
     </div>
-    <nav></nav>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Sign up</a></li>
+        <li><a href="#">Log In</a></li>
+      </ul>
+
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </nav>
   </header>
   <!-- *HEADER END -->
 
@@ -25,25 +38,30 @@
   <main>
 
     <!-- *HERO START -->
-    <section class="hero">
-      <div class="hero-container container">
+    <section class="hero display-none">
+      <div class="hero-container container flex flex-column-reverse align-center">
 
-        <div class="hero-contents">
+        <div class="hero-contents text-center">
           <h1>Start your Journey as Influencer</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum sed scelerisque eros. Lectus faucibus.</p>
-          <a href="#" class="btn">Prebook Now </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum sed scelerisque eros. Lectus
+            faucibus.</p>
+          <a href="#" class="m-auto btn">Prebook Now <i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
         <div class="hero-image">
-          <img src="./images/banner/main-camera.png" alt="It is an image on an camera">
+          <img src="./images/banner/main-camera.png" alt="It is an image on an camera" class="m-auto">
         </div>
 
       </div>
     </section>
     <!-- *HERO END -->
 
-        <!-- *BRANDS IMAGES START -->
-             <section class="brands">
+/* .hero-image img {
+  width: 200px;
+  height: 190px;
+} */
+    <!-- *BRANDS IMAGES START -->
+    <section class="brands">
       <div class="brands-container container">
 
         <div class="brand-images-1">
@@ -61,21 +79,22 @@
 
       </div>
     </section>
-        <!-- *BRANDS IMAGES END -->
+    <!-- *BRANDS IMAGES END -->
 
     <!-- *PRODUCTS START -->
-    <section class="produts">
+    <section class="produts display-none">
       <div class="produts-container container"></div>
     </section>
     <!-- *PRODUCTS END -->
 
     <!-- *FEATURED START -->
-    <section class="featured">
+    <section class="featured display-none">
       <div class="featured-container container">
 
         <div class="featured-contents">
           <h2>Featured products at one place</h2>
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
           <a href="#" class="btn radius-none">Join Now</a>
         </div>
 
@@ -91,15 +110,18 @@
   <!-- *MAIN END -->
 
   <!-- *FOOTER START -->
-  <footer>
-    <div class="footer-contents">
+  <footer class="display-none">
+    <div class="footer-contents text-center">
       <h2>Influencer products</h2>
       <p><small>Copyright © 2020 influencer products</small></p>
       <p><small>All rights reserved</small></p>
     </div>
     <div class="footer-social-icons">
-      <ul>
-        <li><a href="#"></a></li>
+      <ul class="flex justify-center">
+        <li><a href="#" class="flex"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#" class="flex"><i class="fa-brands fa-dribbble"></i></a></li>
+        <li><a href="#" class="flex"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#" class="flex"><i class="fa-brands fa-youtube"></i></a></li>
       </ul>
     </div>
   </footer>
