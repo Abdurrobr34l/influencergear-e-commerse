@@ -8,8 +8,8 @@
 
 /* *VARIABLES START */
 :root {
-  --heading-title-clr: #3a3a3a;
-  --sub-title-clr: #18191f;
+  --heading-title-clr: #18191f;
+  --sub-title-clr: #3a3a3a;
   --text-clr: #787885;
   --accent-clr: #e02c6d;
 
@@ -186,6 +186,36 @@ p {
 }
 /* *BLOCK'S CSS END */
 
+/* *HEADER START */
+header {
+  margin: 35px 0 0;
+}
+.header-toggler i,
+nav ul li {
+  transition: color 0.33s ease-in-out;
+}
+.header-toggler:hover i {
+  color: var(--accent-clr);
+  cursor: pointer;
+}
+.logo a h2 {
+  font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
+  font-weight: 700;
+}
+nav,
+.menu,
+.search-cart {
+  gap: 34px;
+}
+.menu,
+.search {
+  display: none;
+}
+nav ul li:hover {
+  color: var(--accent-clr);
+}
+/* *HEADER END */
+
 /* *HERO START */
 .hero {
   padding: 22px 0 55px;
@@ -227,6 +257,81 @@ p {
   gap: 30px;
 }
 /* *BRANDS END */
+
+/* *PRODUCTS START */
+.products {
+  margin: 50px 0 30px;
+}
+.products-grid {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  margin: 20px 0 30px;
+}
+.product {
+  padding: 17px 15px 27px;
+  border-radius: 5px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+}
+.prodtuct-image img {
+  width: 100%;
+}
+.prodtuct-name {
+  margin: 12px 0 6px;
+}
+.prodtuct-price span {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.prodtuct-rating {
+  margin: 5px 0 8px;
+}
+.prodtuct-rating ul {
+  gap: 3px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fb8200;
+}
+.prodtuct-rating li:last-child {
+  margin-left: 10px;
+  color: var(--text-clr);
+}
+.prodtuct-delivery {
+  margin-bottom: 5px;
+}
+.products-button {
+  justify-content: flex-end;
+}
+.products-button .btn {
+  padding: 0;
+  background-color: transparent;
+  color: var(--accent-clr);
+  width: 100px;
+  transition: color 0.33s ease-in-out;
+}
+.products-button .btn:hover {
+  color: var(--bg-clr);
+}
+/* *PRODUCTS END */
+
+/* *FEATURED START */
+.featured {
+  margin: 50px 0;
+}
+.featured-container {
+  gap: 30px;
+}
+.featured-contents {
+  width: 100%;
+  max-width: 610px;
+}
+.featured-contents p {
+  margin: 15px 0 30px;
+  line-height: 20px;
+}
+.featured-contents .btn {
+  width: 150px;
+}
+/* *FEATURED END */
 
 /* *FOOTER START */
 footer {

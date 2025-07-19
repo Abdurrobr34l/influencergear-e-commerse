@@ -13,24 +13,32 @@
 <body>
 
   <!-- *HEADER START -->
-  <header class="display-none">
-    <div class="header-toggler"><i class="fa-solid fa-bars fa-lg"></i></div>
-    <div class="logo">
-      <a href="index.html">Influencer Gear</a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Sign up</a></li>
-        <li><a href="#">Log In</a></li>
-      </ul>
+  <header>
+    <div class="header-container container flex justify-between align-center">
 
-      <ul>
-        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-      </ul>
-    </nav>
+      <div class="header-toggler">
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </div>
+
+      <div class="logo">
+        <a href="index.html"><h2>Influencer Gear</h2></a>
+      </div>
+
+      <nav class="flex">
+        <ul class="menu flex">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Sign up</a></li>
+          <li><a href="#">Log In</a></li>
+        </ul>
+
+        <ul class="search-cart flex">
+          <li class="search"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+          <li class="cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+      </nav>
+
+    </div>
   </header>
   <!-- *HEADER END -->
 
@@ -38,7 +46,7 @@
   <main>
 
     <!-- *HERO START -->
-    <section class="hero display-none">
+    <section class="hero">
       <div class="hero-container container flex flex-column-reverse align-center">
 
         <div class="hero-contents text-center">
@@ -57,44 +65,317 @@
     <!-- *HERO END -->
 
     <!-- *BRANDS IMAGES START -->
-    <section class="brands display-none">
-      <div class="brands-container container">
+    <section class="brands>
+      <div class=" brands-container container">
 
-        <div class="brands-images flex flex-column">
+      <div class="brands-images flex flex-column">
 
-          <div class="brand-images-1 flex justify-center align-center">
-            <img src="./images/brand-logos/alibaba.svg" alt="It is alibaba logo image">
-            <img src="./images/brand-logos/amazon.svg" alt="It is amazon logo image">
-            <img src="./images/brand-logos/daraz.svg" alt="It is daraz logo image">
-            <img src="./images/brand-logos/ebay.svg" alt="It is ebay logo image">
-          </div>
-
-          <div class="brand-images-2 flex  justify-center align-center">
-            <img src="./images/brand-logos/rakuten.svg" alt="It is rakuten logo image">
-            <img src="./images/brand-logos/walmart.svg" alt="It is walmart logo image">
-            <img src="./images/brand-logos/target.svg" alt="It is target logo image">
-          </div>
+        <div class="brand-images-1 flex justify-center align-center">
+          <img src="./images/brand-logos/alibaba.svg" alt="It is alibaba logo image">
+          <img src="./images/brand-logos/amazon.svg" alt="It is amazon logo image">
+          <img src="./images/brand-logos/daraz.svg" alt="It is daraz logo image">
+          <img src="./images/brand-logos/ebay.svg" alt="It is ebay logo image">
         </div>
+
+        <div class="brand-images-2 flex  justify-center align-center">
+          <img src="./images/brand-logos/rakuten.svg" alt="It is rakuten logo image">
+          <img src="./images/brand-logos/walmart.svg" alt="It is walmart logo image">
+          <img src="./images/brand-logos/target.svg" alt="It is target logo image">
+        </div>
+      </div>
 
       </div>
     </section>
     <!-- *BRANDS IMAGES END -->
 
     <!-- *PRODUCTS START -->
-    <section class="produts display-none">
-      <div class="produts-container container"></div>
+    <section class="products">
+      <div class="products-container container">
+        <div class="products-title text-center">
+          <h2>Popular Collection</h2>
+        </div>
+
+        <div class="products-grid grid">
+
+          <!-- ?Product 1 -->
+          <div class="product">
+            <div class="prodtuct-image">
+              <img src="./images/products/tripod.png" alt="It is an image of tripod">
+            </div>
+            <div class="prodtuct-name">
+              <h3>Flex Tripod</h3>
+            </div>
+            <div class="prodtuct-price">
+              <span>$50.48</span>
+            </div>
+            <div class="prodtuct-rating">
+              <ul class="flex align-center">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                <li><span>4.99</span></li>
+              </ul>
+            </div>
+            <div class="prodtuct-delivery">
+              <p>Wordwide shifting available</p>
+            </div>
+            <div class="prodtuct-waranty">
+              <p>Buyers protection possible!</p>
+            </div>
+          </div>
+
+          <!-- ?Product 2 -->
+          <div class="product">
+            <div class="prodtuct-image">
+              <img src="./images/products/mic.png" alt="It is an image of mic">
+            </div>
+            <div class="prodtuct-name">
+              <h3>Microphone</h3>
+            </div>
+            <div class="prodtuct-price">
+              <span>$120.25</span>
+            </div>
+            <div class="prodtuct-rating">
+              <ul class="flex align-center">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                <li><span>4.99</span></li>
+              </ul>
+            </div>
+            <div class="prodtuct-delivery">
+              <p>Wordwide shifting available</p>
+            </div>
+            <div class="prodtuct-waranty">
+              <p>Buyers protection possible!</p>
+            </div>
+          </div>
+
+          <!-- ?Product 3 -->
+          <div class="product">
+            <div class="prodtuct-image">
+              <img src="./images/products/airpod.png" alt="It is an image of airpod">
+            </div>
+            <div class="prodtuct-name">
+              <h3>Airbuds</h3>
+            </div>
+            <div class="prodtuct-price">
+              <span>$100.00</span>
+            </div>
+            <div class="prodtuct-rating">
+              <ul class="flex align-center">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                <li><span>4.99</span></li>
+              </ul>
+            </div>
+            <div class="prodtuct-delivery">
+              <p>Wordwide shifting available</p>
+            </div>
+            <div class="prodtuct-waranty">
+              <p>Buyers protection possible!</p>
+            </div>
+          </div>
+
+          <!-- ?Product 4 -->
+          <div class="product">
+            <div class="prodtuct-image">
+              <img src="./images/products/drone.png" alt="It is an image of drone">
+            </div>
+            <div class="prodtuct-name">
+              <h3>Drone</h3>
+            </div>
+            <div class="prodtuct-price">
+              <span>$980.25</span>
+            </div>
+            <div class="prodtuct-rating">
+              <ul class="flex align-center">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                <li><span>4.99</span></li>
+              </ul>
+            </div>
+            <div class="prodtuct-delivery">
+              <p>Wordwide shifting available</p>
+            </div>
+            <div class="prodtuct-waranty">
+              <p>Buyers protection possible!</p>
+            </div>
+          </div>
+
+          <!-- ?Product 5 -->
+          <div class="product">
+            <div class="prodtuct-image">
+              <img src="./images/products/lights.png" alt="It is an image of lights">
+            </div>
+            <div class="prodtuct-name">
+              <h3>Light Setup</h3>
+            </div>
+            <div class="prodtuct-price">
+              <span>$1200.00</span>
+            </div>
+            <div class="prodtuct-rating">
+              <ul class="flex align-center">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                <li><span>4.99</span></li>
+              </ul>
+            </div>
+            <div class="prodtuct-delivery">
+              <p>Wordwide shifting available</p>
+            </div>
+            <div class="prodtuct-waranty">
+              <p>Buyers protection possible!</p>
+            </div>
+          </div>
+
+          <!-- ?Product 6 -->
+          <div class="product">
+            <div class="prodtuct-image">
+              <img src="./images/products/setup.png" alt="It is an image of setup">
+            </div>
+            <div class="prodtuct-name">
+              <h3>Photoshoot set</h3>
+            </div>
+            <div class="prodtuct-price">
+              <span>$820.40</span>
+            </div>
+            <div class="prodtuct-rating">
+              <ul class="flex align-center">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                <li><span>4.99</span></li>
+              </ul>
+            </div>
+            <div class="prodtuct-delivery">
+              <p>Wordwide shifting available</p>
+            </div>
+            <div class="prodtuct-waranty">
+              <p>Buyers protection possible!</p>
+            </div>
+          </div>
+
+          <!-- ?Product 7 -->
+          <div class="product">
+            <div class="prodtuct-image">
+              <img src="./images/products/camera.png" alt="It is an image of camera">
+            </div>
+            <div class="prodtuct-name">
+              <h3>Vlogging Camera</h3>
+            </div>
+            <div class="prodtuct-price">
+              <span>$1800.80</span>
+            </div>
+            <div class="prodtuct-rating">
+              <ul class="flex align-center">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                <li><span>4.99</span></li>
+              </ul>
+            </div>
+            <div class="prodtuct-delivery">
+              <p>Wordwide shifting available</p>
+            </div>
+            <div class="prodtuct-waranty">
+              <p>Buyers protection possible!</p>
+            </div>
+          </div>
+
+          <!-- ?Product 8 -->
+          <div class="product">
+            <div class="prodtuct-image">
+              <img src="./images/products/single-light.png" alt="It is an image of single-light">
+            </div>
+            <div class="prodtuct-name">
+              <h3>Green Screen</h3>
+            </div>
+            <div class="prodtuct-price">
+              <span>$25.48</span>
+            </div>
+            <div class="prodtuct-rating">
+              <ul class="flex align-center">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                <li><span>4.99</span></li>
+              </ul>
+            </div>
+            <div class="prodtuct-delivery">
+              <p>Wordwide shifting available</p>
+            </div>
+            <div class="prodtuct-waranty">
+              <p>Buyers protection possible!</p>
+            </div>
+          </div>
+
+          <!-- ?Product 9 -->
+          <div class="product">
+            <div class="prodtuct-image">
+              <img src="./images/products/action.png" alt="It is an image of action">
+            </div>
+            <div class="prodtuct-name">
+              <h3>Action Camera</h3>
+            </div>
+            <div class="prodtuct-price">
+              <span>$380.00</span>
+            </div>
+            <div class="prodtuct-rating">
+              <ul class="flex align-center">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                <li><span>4.99</span></li>
+              </ul>
+            </div>
+            <div class="prodtuct-delivery">
+              <p>Wordwide shifting available</p>
+            </div>
+            <div class="prodtuct-waranty">
+              <p>Buyers protection possible!</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="products-button flex">
+          <a href="#" class="btn">See More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
     </section>
     <!-- *PRODUCTS END -->
 
     <!-- *FEATURED START -->
     <section class="featured">
-      <div class="featured-container container">
+      <div class="featured-container container flex flex-column align-center">
 
-        <div class="featured-contents">
+        <div class="featured-contents text-center">
           <h2>Featured products at one place</h2>
           <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
             velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-          <a href="#" class="btn radius-none">Join Now</a>
+          <a href="#" class="btn m-auto radius-none">Join Now</a>
         </div>
 
         <div class="featured-image">
@@ -109,7 +390,7 @@
   <!-- *MAIN END -->
 
   <!-- *FOOTER START -->
-  <footer class="display-none">
+  <footer>
     <div class="footer-contents text-center">
       <h2>Influencer products</h2>
       <p><small>Copyright © 2020 influencer products</small></p>
