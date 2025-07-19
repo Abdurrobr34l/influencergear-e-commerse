@@ -1,9 +1,9 @@
 /* *MOBILE */
-@media (min-width: 320px) and (max-width: 575.98px) {
-  /* body {
+/* @media (min-width: 320px) and (max-width: 575.98px) {
+  body {
     background-color: red;
-  } */
-}
+  }
+} */
 
 /* *TABLET */
 @media (min-width: 576px) and (max-width: 1023.98px) {
@@ -12,6 +12,16 @@
     gap: 40px;
   }
   /* *HERO END */
+
+  /* *BRANDS START */
+  .brands-images img {
+    width: 80px;
+  }
+  .brand-images-1,
+  .brand-images-2 {
+    gap: 40px;
+  }
+  /* *BRANDS END */
 }
 
 /* *LAPTOP */
@@ -35,6 +45,16 @@
     margin: 0;
   }
   /* *HERO END */
+
+  /* *BRANDS START */
+  .brands-images img {
+    width: 80px;
+  }
+  .brand-images-1,
+  .brand-images-2 {
+    gap: 50px;
+  }
+  /* *BRANDS END */
 }
 
 /* *DESKTOP */
@@ -58,6 +78,20 @@
     margin: 0;
   }
   /* *HERO END */
+
+  /* *BRANDS START */
+  .brands-images {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .brands-images img {
+    width: 90px;
+  }
+  .brand-images-1,
+  .brand-images-2 {
+    gap: 60px;
+  }
+  /* *BRANDS END */
 }
 
 /* *EXTRA-LARGE DESKTOP */
