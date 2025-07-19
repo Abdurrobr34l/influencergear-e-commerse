@@ -215,6 +215,26 @@ p {
 }
 /* *HERO END */
 
+/* *BRANDS START */
+.brands-images {
+  overflow: hidden;
+  gap: 20px;
+}
+.brands-images img {
+  width: 45px;
+}
+.brand-images-1,
+.brand-images-2 {
+  gap: 30px;
+border: 1px solid;
+}
+@keyframes sliderLeft {
+  0% {
+    translate: ;
+  }
+}
+/* *BRANDS END */
+
 /* *FOOTER START */
 footer {
   padding: 50px 0;
